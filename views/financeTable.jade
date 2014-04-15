@@ -1,0 +1,21 @@
+extends layout
+block content
+  
+  .formDetailsHeader
+    div.row
+        div(class="large-4 columns")
+            label Enter Start Date
+                input(type="date", name="Start Date", id="start_field")
+            label Enter End Date
+                input(type="date", name="End Date", id="end_field")
+    div.row
+        div(class="large-4 columns")
+            input(type="button", name="getDates", value="Get Date Input", id="getDates")
+    div.row
+        div(class="large-4 columns")
+            input(type="button", name="saveChanges", value="Save All Changes", id="saveChanges")
+            input(type="button", name="addRow", value="Add New Row", id="addRow")
+  div#example1.handsontable
+  script(src='/js/jquery.handsontable.full.js')
+  script(src='/js/Handsontable_tutorial.js')
+  script(src='/js/financeJS.js')

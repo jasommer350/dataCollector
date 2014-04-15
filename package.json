@@ -1,0 +1,14 @@
+{
+  "name": "Data Collection App",
+  "version": "0.0.0",
+  "description": "App for collecting misc data",
+  "main": "app.js",
+  "dependencies": {
+    "express": ">=3.x",
+    "mongodb": "~1.3.9"
+  },
+  "repository": "",
+  "author": "Justin Sommer",
+  "license": "MIT",
+  "private": true
+}

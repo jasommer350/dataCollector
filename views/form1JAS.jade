@@ -1,0 +1,45 @@
+extends layout
+block content
+	form(name="form1JAS", method="post", id="form1JAS")
+		div.row
+			div(class="large-3 columns")
+				label Type - Wine, Scotch, Beer
+					input(type="text", name="booze_type")
+			div(class="large-3 columns")
+				label Brand
+					input(type="text", name="brand_name")
+			div(class="large-2 columns")
+				label Region
+					input(type="text", name="region")
+			div(class="large-2 columns")
+				label Style
+					input(type="text", name="style")
+			div(class="large-2 columns")
+				label Occasion
+					input(type="text", name="occasion")
+		div.row
+			div(class="large-1 columns")
+				label Did You Like It?
+				div.row
+					div(class="large-1 columns")
+						label(for="likeYea") Yea
+						input(type="radio", name="likedIt", value="Yea", id="likeYea")
+					div(class="large-1 columns")
+						label(for="likeNah") Nah
+						input(type="radio", name="notMyTaste", value="Nah", id="likeNah")
+			div(class="large-2 columns")
+				label Grade
+					select(name="grade")
+						option(value="AAA") AAA
+						option(value="AA") AA
+						option(value="A") A
+						option(value="BBB") BBB
+						option(value="BB") BB
+						option(value="B") B
+			div(class="large-9 columns")
+				label What did you Think?
+					textarea(name="detailThoughts", placeholder="Enter what you thought about it")
+		div.row
+			div(class="large-9 columns")
+				input(type="button", name="process_form", value="Process Form", id="form_process")
+	script(src='/js/form_processing.js')

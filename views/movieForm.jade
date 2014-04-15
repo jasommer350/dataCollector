@@ -1,0 +1,27 @@
+extends layout
+block content
+	form(name="movieForm", method="post", id="movieForm")
+		div.row
+			div(class="large-4 columns")
+				label Movie Name
+					input(type="text", name="movie_name")
+			div(class="large-4 columns")
+				label Genre
+					input(type="text", name="genre")
+		div.row
+			div(class="large-3 columns")
+				label Rating
+					select(name="rating")
+						option(value="AAA") AAA
+						option(value="AA") AA
+						option(value="A") A
+						option(value="BBB") BBB
+						option(value="BB") BB
+						option(value="B") B
+			div(class="large-9 columns")
+				label Reason for Wanting it
+					textarea(name="detailThoughts", placeholder="Enter what you thought about it")
+		div.row
+			div(class="large-9 columns")
+				input(type="button", name="process_form", value="Process Form", id="form_process")
+	script(src='/js/form_processing.js')

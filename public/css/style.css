@@ -1,0 +1,42 @@
+body {
+    background: #7070f2;
+}
+h1 {
+    text-align: center;
+    background: #ede9e9;
+    text-shadow: 0 1px 0 #a0a0a0;
+    box-shadow: 0 0 4px rgba(0,0,0,.5);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+form {
+    box-shadow: 0 0 4px rgba(0,0,0,.5);
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    background: #ede9e9;
+}
+.handsontable {
+    width: 90%;
+    margin: auto;
+    
+}
+.handsontable .currentRow {
+  background-color: #E7E8EF;
+}
+
+.handsontable .currentCol {
+  background-color: #F9F9FB;
+}
+.handsontable .pass {
+  background: #ffc0ab;
+}
+.formDetailsHeader {
+   width: 70%;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+}
+

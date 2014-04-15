@@ -1,0 +1,43 @@
+extends layout
+block content
+	form(name="rowingForm", method="post", id="rowingForm")
+		div.row
+			div(class="large-4 columns")
+				label Rower
+					input(type="text", name="RowerName")
+			div(class="large-4 columns")
+				label Workout Type
+					select(name="WorkOutType")
+						option(value="Distance") Distance
+						option(value="Duration") Duration
+						option(value="Distance Interval") Distance Interval
+						option(value="Duration Interval") Duration Interval
+			div(class="large-4 columns")
+				label Stroke Rate
+					input(type="text", name="StrokeRate")
+		div.row
+			div(class="large-4 columns")
+				label Average Intensity m/s
+					input(type="text", name="AvgIntensityMS")
+			div(class="large-4 columns")
+				label Distance - Meters
+					input(type="text", name="DistanceMeters")
+			div(class="large-4 columns")
+				label Duration
+					input(type="text", name="Duration")
+		div.row
+			div(class="large-3 columns")
+				label Time of Day
+					select(name="TimeOfDay")
+						option(value="Morning") Morning
+						option(value="Afternoon") Afternoon
+						option(value="Evening") Evening
+				label Date
+					input(type="date", name="Date")
+			div(class="large-9 columns")
+				label How Did It Go?
+					textarea(name="detailThoughts", placeholder="Enter what you thought about it")
+		div.row
+			div(class="large-9 columns")
+				input(type="button", name="process_form", value="Process Form", id="form_process")
+	script(src='/js/form_processing.js')
